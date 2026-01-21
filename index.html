@@ -347,7 +347,7 @@
         footer p {
             margin-bottom: 20px;
             opacity: 0.9;
-        }
+         }
 
         .footer-links {
             margin-top: 20px;
@@ -497,7 +497,7 @@
                     <p style="margin-top: 20px;"><strong style="color: #2c7a9e;">Our Solution:</strong></p>
                     <ul>
                         <li>Up to 90-day payment terms on medical supplies</li>
-                        <li>Fast approval process with AI-powered underwriting</li>
+                         <li>Fast approval process with AI-powered underwriting</li>
                         <li>Predictable financing costs (transparent pricing)</li>
                         <li>Partner with you to manage cash flow, not strain it</li>
                     </ul>
@@ -567,31 +567,37 @@
 
             <form class="survey-form" id="surveyForm">
 
-
-     <!-- SECTION A: About You & Your Facility -->
+<!-- SECTION A: About You & Your Facility -->
 <div class="form-section">
     <h4>Section A: About You & Your Facility</h4>
 
     <div class="form-group">
         <label>1. What is your role at the facility? *</label>
         <div class="radio-group">
-            <label><input type="radio" name="role" value="Finance" required> Finance/Accounting/CFO</label>
-            <label><input type="radio" name="role" value="Operations"> Operations/Administrator/COO</label>
-            <label><input type="radio" name="role" value="Purchasing"> Purchasing/Supply Chain</label>
-            <label><input type="radio" name="role" value="Director"> Director/Executive Leadership</label>
+            <label><input type="radio" name="role" value="Finance" required> Finance</label>
+            <label><input type="radio" name="role" value="Accounting"> Accounting</label>
+            <label><input type="radio" name="role" value="CFO"> CFO</label>
+            <label><input type="radio" name="role" value="Operations"> Operations</label>
+            <label><input type="radio" name="role" value="Administrator"> Administrator</label>
+            <label><input type="radio" name="role" value="COO"> COO</label>
+            <label><input type="radio" name="role" value="Purchasing"> Purchasing</label>
+            <label><input type="radio" name="role" value="Supply Chain"> Supply Chain</label>
+            <label><input type="radio" name="role" value="Director"> Director</label>
+            <label><input type="radio" name="role" value="Executive Leadership"> Executive Leadership</label>
             <label><input type="radio" name="role" value="Other" id="roleOther"> Other</label>
-             <input type="text" id="roleOtherText" name="roleOther" class="other-input" placeholder="Please specify" style="display:none">
+            <input type="text" id="roleOtherText" name="roleOther" class="other-input" placeholder="Please specify" style="display:none">
         </div>
     </div>
 
     <div class="form-group">
-        <label>2. What type of healthcare facility do you work for? *</label>
-        <div class="radio-group">
-            <label><input type="radio" name="facilityType" value="Nursing Home" required> Nursing Home</label>
-            <label><input type="radio" name="facilityType" value="Long-term Care Facility"> Long-term Care Facility</label>
-            <label><input type="radio" name="facilityType" value="Assisted Living Facility"> Assisted Living Facility</label>
-            <label><input type="radio" name="facilityType" value="Skilled Nursing Facility"> Skilled Nursing Facility</label>
-            <label><input type="radio" name="facilityType" value="Other" id="facilityTypeOther"> Other</label>
+        <label>2. What type of healthcare facility do you work for? (Select all that apply) *</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="facilityType" value="Nursing Home"> Nursing Home</label>
+            <label><input type="checkbox" name="facilityType" value="Long-term Care Facility"> Long-term Care Facility</label>
+            <label><input type="checkbox" name="facilityType" value="Assisted Living Facility"> Assisted Living Facility</label>
+            <label><input type="checkbox" name="facilityType" value="Skilled Nursing Facility"> Skilled Nursing Facility</label>
+            <label><input type="checkbox" name="facilityType" value="Rehabilitation"> Rehabilitation</label>
+            <label><input type="checkbox" name="facilityType" value="Other" id="facilityTypeOther"> Other</label>
             <input type="text" id="facilityTypeOtherText" name="facilityTypeOther" class="other-input" placeholder="Please specify" style="display:none">
         </div>
     </div>
@@ -632,12 +638,13 @@
     </div>
 
     <div class="form-group">
-    <label>6. How much time does your staff spend on manual inventory tracking per week? *</label>
-    <div class="radio-group">
-        <label><input type="radio" name="timeOnInventory" value="Less than 5 hours" required> Less than 5 hours</label>
-        <label><input type="radio" name="timeOnInventory" value="5-10 hours"> 5-10 hours</label>
-        <label><input type="radio" name="timeOnInventory" value="10-20 hours"> 10-20 hours</label>
-        <label><input type="radio" name="timeOnInventory" value="More than 20 hours"> More than 20 hours</label>
+        <label>6. How much time does your staff spend on manual inventory tracking per week? *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="timeOnInventory" value="Less than 5 hours" required> Less than 5 hours</label>
+            <label><input type="radio" name="timeOnInventory" value="5-10 hours"> 5-10 hours</label>
+            <label><input type="radio" name="timeOnInventory" value="10-20 hours"> 10-20 hours</label>
+            <label><input type="radio" name="timeOnInventory" value="More than 20 hours"> More than 20 hours</label>
+        </div>
     </div>
 </div>
 
@@ -645,36 +652,37 @@
 <div class="form-section">
     <h4>Section C: Solution Interest</h4>
 
-  <div class="form-group">
-    <label>7. Which solution would be MORE valuable to your facility? *</label>
-    <div class="radio-group">
-        <label><input type="radio" name="solutionPreference" value="90-Day Financing Terms" required> 90-Day Financing Terms for Medical Supplies</label>
-        <label><input type="radio" name="solutionPreference" value="RFID Warehouse Software"> RFID-Based Warehouse Management Software</label>
-        <label><input type="radio" name="solutionPreference" value="Both equally important"> Both are equally important</label>
-        <label><input type="radio" name="solutionPreference" value="Neither"> Neither addresses our main concerns</label>
+    <div class="form-group">
+        <label>7. Which solution would be MORE valuable to your facility? *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="solutionPreference" value="90-Day Financing Terms" required> 90-Day Financing Terms for Medical Supplies</label>
+            <label><input type="radio" name="solutionPreference" value="RFID Warehouse Software"> RFID-Based Warehouse Management Software</label>
+            <label><input type="radio" name="solutionPreference" value="Both equally important"> Both are equally important</label>
+            <label><input type="radio" name="solutionPreference" value="Neither"> Neither addresses our main concerns</label>
+        </div>
     </div>
-</div>
 
     <div class="form-group">
-    <label>8. For the 90-day financing option: What percentage fee would you consider reasonable to access extended payment terms? *</label>
-    <div class="radio-group">
-        <label><input type="radio" name="financing_fee" value="Up to 3%" required> Up to 3% of order value</label>
-        <label><input type="radio" name="financing_fee" value="4-6%"> 4-6% of order value</label>
-        <label><input type="radio" name="financing_fee" value="7-9%"> 7-9% of order value</label>
-        <label><input type="radio" name="financing_fee" value="10%+"> 10%+ would still be worth it</label>
-        <label><input type="radio" name="financing_fee" value="Not interested"> Not interested in financing</label>
+        <label>8. For the 90-day financing option: What percentage fee would you consider reasonable to access extended payment terms? *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="financing_fee" value="Up to 3%" required> Up to 3% of order value</label>
+            <label><input type="radio" name="financing_fee" value="4-6%"> 4-6% of order value</label>
+            <label><input type="radio" name="financing_fee" value="7-9%"> 7-9% of order value</label>
+            <label><input type="radio" name="financing_fee" value="10%+"> 10%+ would still be worth it</label>
+            <label><input type="radio" name="financing_fee" value="Not interested"> Not interested in financing</label>
+        </div>
     </div>
-</div>
-    
+
     <div class="form-group">
-    <label>9. For the warehouse management software: What would you consider a fair monthly cost for a system that automates inventory tracking, forecasting, and ordering? *</label>
-    <div class="radio-group">
-        <label><input type="radio" name="softwareCost" value="Under $200/month" required> Under $200/month</label>
-        <label><input type="radio" name="softwareCost" value="$200-$500/month"> $200-$500/month</label>
-        <label><input type="radio" name="softwareCost" value="$500-$1000/month"> $500-$1,000/month</label>
-        <label><input type="radio" name="softwareCost" value="$1000-$2000/month"> $1,000-$2,000/month</label>
-        <label><input type="radio" name="softwareCost" value="$2000+/month"> $2,000+/month</label>
-        <label><input type="radio" name="softwareCost" value="Depends on size"> Would depend on facility size and features</label>
+        <label>9. For the warehouse management software: What would you consider a fair monthly cost for a system that automates inventory tracking, forecasting, and ordering? *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="softwareCost" value="Under $200/month" required> Under $200/month</label>
+            <label><input type="radio" name="softwareCost" value="$200-$500/month"> $200-$500/month</label>
+            <label><input type="radio" name="softwareCost" value="$500-$1000/month"> $500-$1,000/month</label>
+            <label><input type="radio" name="softwareCost" value="$1000-$2000/month"> $1,000-$2,000/month</label>
+            <label><input type="radio" name="softwareCost" value="$2000+/month"> $2,000+/month</label>
+            <label><input type="radio" name="softwareCost" value="Depends on size"> Would depend on facility size and features</label>
+        </div>
     </div>
 </div>
 
@@ -683,13 +691,13 @@
     <h4>Section D: Next Steps</h4>
 
     <div class="form-group">
-    <label>10. Would you be interested in a brief discovery call to discuss how these solutions could specifically benefit your facility? *</label>
-    <div class="radio-group">
-        <label><input type="radio" name="discoveryCall" value="Yes - Schedule call" required> Yes, I'd like to schedule a call</label>
-        <label><input type="radio" name="discoveryCall" value="Maybe - More info"> Maybe – send me more information first</label>
-        <label><input type="radio" name="discoveryCall" value="Not at this time"> Not at this time</label>
+        <label>10. Would you be interested in a brief discovery call to discuss how these solutions could specifically benefit your facility? *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="discoveryCall" value="Yes - Schedule call" required> Yes, I'd like to schedule a call</label>
+            <label><input type="radio" name="discoveryCall" value="Maybe - More info"> Maybe – send me more information first</label>
+            <label><input type="radio" name="discoveryCall" value="Not at this time"> Not at this time</label>
+        </div>
     </div>
-</div>
 
     <div class="form-group">
         <label>11. Would you be interested in being an early partner/beta tester to help shape these solutions? *</label>
@@ -701,16 +709,16 @@
     </div>
 
     <div class="form-group">
-        <label>12. Contact Information (Optional but helpful for follow-up)</label>
+        <label>12. Contact Information *</label>
 
-        <label style="margin-top: 15px;">Name:</label>
-        <input type="text" name="name" id="contactName" placeholder="Your full name">
+        <label style="margin-top: 15px;">Name: *</label>
+        <input type="text" name="name" id="contactName" placeholder="Your full name" required>
 
         <label style="margin-top: 15px;">Facility Name:</label>
         <input type="text" name="facilityName" id="facilityName" placeholder="Your facility name">
 
-        <label style="margin-top: 15px;">Email:</label>
-        <input type="email" name="email" id="contactEmail" placeholder="your.email@example.com">
+        <label style="margin-top: 15px;">Email: *</label>
+        <input type="email" name="email" id="contactEmail" placeholder="your.email@example.com" required>
 
         <label style="margin-top: 15px;">Phone:</label>
         <input type="tel" name="phone" id="contactPhone" placeholder="(555) 123-4567">
@@ -787,17 +795,9 @@
             });
         });
 
-        // Handle "Other" option visibility for Facility Type
+        // Handle "Other" option visibility for Facility Type (CHECKBOX VERSION)
         document.getElementById('facilityTypeOther').addEventListener('change', function() {
-            document.getElementById('facilityTypeOtherText').style.display = 'block';
-        });
-
-        document.querySelectorAll('input[name="facilityType"]').forEach(radio => {
-            radio.addEventListener('change', function() {
-                if (this.value !== 'Other') {
-                    document.getElementById('facilityTypeOtherText').style.display = 'none';
-                }
-            });
+            document.getElementById('facilityTypeOtherText').style.display = this.checked ? 'block' : 'none';
         });
 
         // Create hidden iframe for form submission
