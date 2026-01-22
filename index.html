@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Healthcare Supply Chain Solutions Survey - Win $1,000">
+    <meta name="description" content="Healthcare Supply Chain Solutions Survey - Win $1,000">
     <title>Healthcare Supply Chain Survey - Win $1,000</title>
     
     <style>
@@ -35,7 +35,7 @@
         }
 
         .hero h1 {
-            font-size:  2.5em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -114,7 +114,7 @@
 
         .form-section {
             margin-bottom: 40px;
-             padding-bottom: 30px;
+            padding-bottom: 30px;
             border-bottom: 2px solid #e9ecef;
         }
 
@@ -139,7 +139,7 @@
             font-weight: 600;
             margin-bottom: 12px;
             color: #333;
-            font-size: 1.05em;
+             font-size: 1.05em;
         }
 
         .radio-group {
@@ -151,7 +151,7 @@
             display: block;
             margin-bottom: 10px;
             cursor: pointer;
-         }
+        }
 
         .radio-group input {
             margin-right: 10px;
@@ -267,7 +267,7 @@
 
         .thank-you h2 {
             color: white;
-        }
+         }
 
         .next-steps {
             background: rgba(255, 255, 255, 0.1);
@@ -347,7 +347,7 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
-        }
+         }
 
         html {
             scroll-behavior: smooth;
@@ -385,7 +385,7 @@
             cursor: pointer;
         }
 
-        .warning-box {
+         .warning-box {
             background: #fff3cd;
             padding: 20px;
             border-left: 4px solid #ffc107;
@@ -458,12 +458,12 @@
                     </div>
                 </div>
 
-                <form id="surveyForm">
+                 <form id="surveyForm">
                     
                     <!-- STEP 1: Facility Type & Role -->
                     <div id="page1" class="form-page">
                         <div class="form-section">
-                             <h4>Tell Us About Your Facility</h4>
+                            <h4>Tell Us About Your Facility</h4>
                             
                             <div class="form-group">
                                 <label>1. What type of healthcare facility do you work for? *</label>
@@ -473,7 +473,7 @@
                                     <option value="Hospital">Hospital</option>
                                     <option value="Doctor Office">Doctor Office / Medical Practice</option>
                                     <option value="Pharmacy">Pharmacy</option>
-                                    <option value="EMS">EMS Company</option>
+                                     <option value="EMS">EMS Company</option>
                                     <option value="Lab">Laboratory</option>
                                 </select>
                             </div>
@@ -514,7 +514,7 @@
                         <!-- Finance Questions -->
                         <div id="financeQuestions" class="form-section hidden">
                             <h4>Cash Flow & Financing</h4>
-                            
+                             
                             <div class="form-group">
                                 <label>How would you rate your current challenges with cash flow and supplier payment terms? *</label>
                                 <div class="radio-group">
@@ -545,7 +545,7 @@
                                 <label>How would you rate your current challenges with inventory management? *</label>
                                 <div class="radio-group">
                                     <label><input type="radio" name="inventoryChallenge" value="Major problem"> Major problem - manual, time-consuming, error-prone</label>
-                                     <label><input type="radio" name="inventoryChallenge" value="Moderate issue"> Moderate issue - we manage but it's inefficient</label>
+                                    <label><input type="radio" name="inventoryChallenge" value="Moderate issue"> Moderate issue - we manage but it's inefficient</label>
                                     <label><input type="radio" name="inventoryChallenge" value="Minor concern"> Minor concern - could be better</label>
                                     <label><input type="radio" name="inventoryChallenge" value="Not a problem"> Not a problem - we have a good system</label>
                                 </div>
@@ -566,7 +566,7 @@
                                 <div class="radio-group">
                                     <label><input type="radio" name="softwareCost" value="Under $200/month"> Under $200/month</label>
                                     <label><input type="radio" name="softwareCost" value="$200-$500/month"> $200-$500/month</label>
-                                    <label><input type="radio" name="softwareCost" value="$500-$1000/month"> $500-$1,000/month</label>
+                                     <label><input type="radio" name="softwareCost" value="$500-$1000/month"> $500-$1,000/month</label>
                                     <label><input type="radio" name="softwareCost" value="$1000-$2000/month"> $1,000-$2,000/month</label>
                                     <label><input type="radio" name="softwareCost" value="$2000+/month"> $2,000+/month</label>
                                     <label><input type="radio" name="softwareCost" value="Depends on size"> Would depend on facility size and features</label>
@@ -574,9 +574,10 @@
                             </div>
                         </div>
 
-                        <!-- Solution Preference (All Roles) -->
+                        <!-- Solution Preference & Next Steps (All Roles) -->
                         <div class="form-section">
-                            <h4>Solution Interest</h4>
+                            <h4>Solution Interest & Next Steps</h4>
+                            
                             <div class="form-group">
                                 <label>Which solution would be MORE valuable to your facility? *</label>
                                 <div class="radio-group">
@@ -584,6 +585,24 @@
                                     <label><input type="radio" name="solutionPreference" value="RFID Warehouse Software"> RFID-Based Warehouse Management Software</label>
                                     <label><input type="radio" name="solutionPreference" value="Both equally important"> Both are equally important</label>
                                     <label><input type="radio" name="solutionPreference" value="Neither"> Neither addresses our main concerns</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Would you be interested in a brief discovery call to discuss how these solutions could specifically benefit your facility? *</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="discoveryCall" value="Yes - Schedule call" required> Yes, I'd like to schedule a call</label>
+                                    <label><input type="radio" name="discoveryCall" value="Maybe - More info"> Maybe – send me more information first</label>
+                                    <label><input type="radio" name="discoveryCall" value="Not at this time"> Not at this time</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Would you be interested in being an early partner/beta tester to help shape these solutions? *</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="betaTester" value="Yes" required> Yes - I'd like to explore this opportunity</label>
+                                    <label><input type="radio" name="betaTester" value="Tell me more"> Tell me more about what this involves</label>
+                                    <label><input type="radio" name="betaTester" value="Not interested"> Not interested right now</label>
                                 </div>
                             </div>
                         </div>
@@ -644,7 +663,7 @@
     <!-- Thank You Section -->
     <section class="thank-you" id="thankYouSection">
         <div class="container">
-            <h2>Thank You for Your Valuable Input! 🙏</h2>
+            <h2>Thank You for Your Valuable Input!  🙏</h2>
             <p style="font-size: 1.2em;">You're now entered to win $1,000 (or $1,500 with referral bonus)!</p>
 
             <div class="next-steps">
@@ -711,7 +730,7 @@
                         </div>
 
                         <textarea name="personalMessage" id="personalMessage" rows="6" required style="font-family: inherit;"></textarea>
-                        <p style="font-size: 0.9em; color: #666; margin-top: 5px;">This message will be included in the email they receive with the survey link.</p>
+                        <p style="font-size: 0.9em; color: #666; margin-top: 5px;">This  message will be included in the email they receive with the survey link.</p>
                     </div>
 
                     <div class="warning-box">
@@ -896,7 +915,7 @@ Good luck!
                 document.getElementById('financeQuestions').classList.add('hidden');
                 document.getElementById('operationsQuestions').classList.remove('hidden');
                 setRequiredFields('finance', false);
-                 setRequiredFields('operations', true);
+                setRequiredFields('operations', true);
             } else { // C-Suite
                 document.getElementById('financeQuestions').classList.remove('hidden');
                 document.getElementById('operationsQuestions').classList.remove('hidden');
@@ -947,8 +966,21 @@ Good luck!
                 }
             }
 
+            // Check solution preference
             if (!document.querySelector('input[name="solutionPreference"]:checked')) {
                 alert('Please answer which solution would be more valuable');
+                return;
+            }
+
+            // Check discovery call
+            if (!document.querySelector('input[name="discoveryCall"]:checked')) {
+                alert('Please answer whether you\'re interested in a discovery call');
+                return;
+            }
+
+            // Check beta tester
+            if (!document.querySelector('input[name="betaTester"]:checked')) {
+                alert('Please answer whether you\'re interested in being a beta tester');
                 return;
             }
 
@@ -997,7 +1029,7 @@ Good luck!
                 'input[name="cashFlowChallenge"], input[name="financing_fee"]' :
                 'input[name="inventoryChallenge"], input[name="timeOnInventory"], input[name="softwareCost"]';
             
-            document.querySelectorAll(selector).forEach(input => {
+             document.querySelectorAll(selector).forEach(input => {
                 if (required) {
                     input.setAttribute('required', 'required');
                 } else {
