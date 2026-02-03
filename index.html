@@ -1206,6 +1206,7 @@ Good luck!
     let selectedRole = '';
     let submitterEmail = '';
     let submitterName = '';
+    let submitterFacility = '';  
     let referralCount = 0;
 
     function nextPage() {
@@ -1356,6 +1357,7 @@ Good luck!
         formData.append('referralCount', '0');
         submitterEmail = formData.get('email');
         submitterName = formData.get('name');
+        submitterFacility = formData.get('facilityName');  
         referralCount = 1;
 
         const tempForm = document.createElement('form');
@@ -1413,6 +1415,7 @@ Good luck!
         referralData.append('submissionType', 'referral');
         referralData.append('referrerEmail', submitterEmail);
         referralData.append('referrerName', submitterName);
+        referralData.append('referrerFacility', submitterFacility);
         referralData.append('refereeName', refereeName);
         referralData.append('refereeEmail', refereeEmail);
         referralData.append('refereeFacility', document.getElementById('refereeFacility').value);
@@ -1483,8 +1486,18 @@ Good luck!
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-        console.log('Survey page loaded - ready to collect responses!');
-    });
+    console.log('Survey page loaded - ready to collect responses!');
+    
+    // Auto-update template when referee name changes
+    const refereeNameInput = document.getElementById('refereeName');
+    if (refereeNameInput) {
+        refereeNameInput.addEventListener('input', function() {
+            if (document.getElementById('useTemplate').checked) {
+                loadTemplate();
+            }
+        });
+    }
+});
 
 </script>
 
